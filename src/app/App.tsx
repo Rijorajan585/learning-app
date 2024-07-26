@@ -8,9 +8,9 @@ const App: React.FC = () => {
   return (
     <Router>
       <AuthProvider>
-        {/* <MainLayout> */}
+        <MainLayout>
           <AppRoutes />
-        {/* </MainLayout> */}
+        </MainLayout>
       </AuthProvider>
     </Router>
   );

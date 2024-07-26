@@ -1,22 +1,27 @@
 export const users = [
+    // {
+    //   username: '',
+    //   password: '',
+    //   roles: [''],
+    // },
     {
       username: 'admin',
-      password: 'password',
+      password: 'admin',
       roles: ['admin'],
     },
     {
       username: 'superadmin',
-      password: 'password',
+      password: 'superadmin',
       roles: ['superadmin'],
     },
     {
       username: 'user',
-      password: 'password',
+      password: 'user',
       roles: ['user'],
     },
     {
       username: 'tester',
-      password: 'password',
+      password: 'tester',
       roles: ['tester'],
     },
   ];
