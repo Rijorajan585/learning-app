@@ -14,8 +14,7 @@ const NotFound = lazy(() => import("../pages/NotFound"));
 // Define route configurations
 const routes: RouteObject[] = [
   { path: "/login", element: <Login /> },
-  { path: "/", element: <ProtectedRoute element={<Home />} roles={[]} /> },
-  // { path: "/learning-app", element: <ProtectedRoute element={<Home />} roles={[]} /> },
+  { path: "/", element: <ProtectedRoute element={<Home />} roles={[]} /> },  
   {
     path: "/admin",
     element: (

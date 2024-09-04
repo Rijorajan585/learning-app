@@ -6,7 +6,7 @@ import MainLayout from "../layouts/MainLayout";
 
 const App: React.FC = () => {
   return (
-    <Router basename="/learning-app">
+    <Router>
       <AuthProvider>
         <MainLayout>
           <AppRoutes />
