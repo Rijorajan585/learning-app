@@ -32,9 +32,7 @@ export const login = createAsyncThunk(
       (user) =>
         user.username === credentials.username &&
         user.password === credentials.password
-    );
-
-    console.log("User found:", user); // Debugging line
+    );  
 
     if (user) {
       localStorage.setItem("accessToken", "mockAccessToken");
@@ -75,16 +73,14 @@ const authSlice = createSlice({
           refreshToken: string;
           roles: string[];
         }>
-      ) => {
-        console.log("Login fulfilled:", action.payload); // Debugging line
+      ) => {        
         state.isAuthenticated = true;
         state.accessToken = action.payload.accessToken;
         state.refreshToken = action.payload.refreshToken;
         state.roles = action.payload.roles;
       }
     );
-    builder.addCase(login.rejected, (state, action) => {
-      console.log("Login rejected:", action.payload); // Debugging line
+    builder.addCase(login.rejected, (state, action) => {     
       state.isAuthenticated = false;
       state.accessToken = null;
       state.refreshToken = null;
