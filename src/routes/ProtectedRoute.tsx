@@ -14,6 +14,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
 }) => {
   const { isAuthenticated, roles: userRoles } = useAuth();
   const location = useLocation();  
+  
   if (!isAuthenticated) {
     return <Navigate to="/login" state={{ from: location }} />;
   } 

@@ -1,6 +1,6 @@
-import React, { Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import routes from '../routes/routes';
+import React, { Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
+import routes from "../routes/routes";
 
 const AppRoutes: React.FC = () => {
   return (
